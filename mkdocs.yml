@@ -1,5 +1,5 @@
-site_name: Документация Бота
-site_url: https://proraschety.github.io/fireengin-bot-docs/
+site_name: Руководство по работе с ботом
+site_url: https://proraschety.github.io/fireengin-bot-guide/
 theme:
   name: material
   font:
