@@ -1,21 +1,17 @@
-# Welcome to MkDocs
+# Бот расчетчик
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+[![Статус](https://img.shields.io/badge/status-active-brightgreen)](https://t.me/fireengin_bot)
 
-## Commands
+Мощный Telegram бот для пожарно-технического анализа и расчетов.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## 🚀 Быстрый старт
 
-## Project layout
+1. Найти бота: [@fireengin_bot](https://t.me/fireengin_bot)
+2. Отправить команду: `/start`
+3. Следовать инструкциям
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## ✨ Основные возможности
 
-## Using Emojis
-
-I like to drink :beers: after I played :soccer:
+- Справочник метеоданных и горючей нагрузки
+- Калькулятор пожарных рисков
+- Определение категории помещений, зданий и наружных установок по взрывопожарной и пожарной опасности

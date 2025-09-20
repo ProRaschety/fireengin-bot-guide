@@ -1,4 +1,4 @@
-site_name: My MkDocs Material Documentation
+site_name: Документация по работе с ботом
 site_url: https://sitename.example
 theme:
   name: material
@@ -14,7 +14,7 @@ theme:
     - scheme: slate
       toggle:
         icon: material/weather-sunny
-        name: Dark mode
+        name: Переключить на светлый режим
       primary: green
       accent: deep purple
 
@@ -22,7 +22,7 @@ theme:
     - scheme: default
       toggle:
         icon: material/weather-night
-        name: Light mode
+        name: Переключить на темный режим
       primary: blue
       accent: deep orange
 
@@ -48,11 +48,21 @@ markdown_extensions:
   - pymdownx.details
 
 extra:
-  social: []
-  # social:
-  #   - icon: simple/youtube
-  #     link: https://youtube.com/@james-willett
-  #   - icon: simple/linkedin
-  #     link: https://linkedin.com/in/willettjames
+  social:
+    # - icon: simple/youtube
+    #   link: https://youtube.com/@james-willett
+    #   name: Смотреть на YouTube
 
-copyright: Copyright &copy; 2025 Ravshan I.
+    # - icon: simple/github
+    #   link: https://github.com/ProRaschety/fireengin-bot-docs
+
+    - icon: simple/telegram
+      link: https://t.me/pro_raschety
+      name: Telegram-канал "Про расчеты"
+
+    - icon: material/play-circle
+      link: https://rutube.ru/channel/30851782/
+      name: Смотреть на RuTube
+
+
+copyright: Copyright &copy; 2023-2025 Ravshan I.
