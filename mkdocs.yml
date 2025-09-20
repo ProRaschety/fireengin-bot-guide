@@ -60,9 +60,9 @@ extra:
       link: https://t.me/pro_raschety
       name: Telegram-канал "Про расчеты"
 
-    - icon: material/play-circle
-      link: https://rutube.ru/channel/30851782/
-      name: Смотреть на RuTube
+    # - icon: material/play-circle
+    #   link: https://rutube.ru/channel/30851782/
+    #   name: Смотреть на RuTube
 
 
 copyright: Copyright &copy; 2023-2025 Ravshan I.
