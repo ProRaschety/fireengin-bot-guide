@@ -1,33 +1,97 @@
-site_name: Руководство по работе с ботом
+# Project information
+site_name: Руководство пользователя
 site_url: https://proraschety.github.io/fireengin-bot-guide/
+site_description: Руководство пользователя по работе с ботом
+site_author: Ibatulin Ravshan
+docs_dir: guide_src
+site_dir: docs
+
+# Repository
+# repo_name: ProRaschety/fireengin-bot-guide
+# repo_url: https://github.com/ProRaschety/fireengin-bot-guide
+# edit_uri: ""
+
+# Copyright
+copyright: Copyright &copy; 2023-2025 Ravshan I.
+
+# Configuration
 theme:
   name: material
+  custom_dir: guide_src/overrides
+  language: ru
+  # font:
+  #   text: Roboto
+  #   code: Roboto Mono
   font:
     text: Merriweather Sans
     code: Red Hat Mono
-  logo: assets/logo.png
-  favicon: assets/favicon.ico
-  features:
-    - navigation.footer
+
+  logo: images/logo.png
+  favicon: images/favicon.ico
+
   palette:
     # Dark Mode
-    - scheme: slate
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate
       toggle:
-        icon: material/weather-sunny
+        icon: material/lightbulb
         name: Переключить на светлый режим
-      primary: green
+      primary: black
       accent: deep purple
 
     # Light Mode
-    - scheme: default
+    - media: "(prefers-color-scheme: dark)"
+      scheme: default
       toggle:
-        icon: material/weather-night
+        icon: material/lightbulb-outline
         name: Переключить на темный режим
-      primary: blue
+      primary: white
       accent: deep orange
 
+  features:
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.tabs.link
+    - content.code.annotate
+    - content.code.copy
+    - navigation.footer
+
+
+# Плагины
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+      lang:
+        - en
+        - ru
+  - git-revision-date:
+      enabled: true
+  # - mkdocs-video:
+  #     is_video: True
+  #     video_autoplay: False
+  #     video_type: mp4
+  #     css_style:
+  #       width: "100%"
+  #       height: "100%"
+
+
+# Extensions
 markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - meta
   - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -44,10 +108,24 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
-  - admonition
   - pymdownx.details
 
+
+nav:
+  - Введение: index.md
+  - Справочники: handbooks.md
+  - Расчетные модули: calculations.md
+  - Примеры:
+    - Категорирование: examples/firecategory.md
+    - Калькулятор риска: examples/firerisk.md
+    - FAQ: faq.md
+
+# Extras
 extra:
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+
   social:
     # - icon: simple/youtube
     #   link: https://youtube.com/@james-willett
@@ -64,5 +142,5 @@ extra:
     #   link: https://rutube.ru/channel/30851782/
     #   name: Смотреть на RuTube
 
-
-copyright: Copyright &copy; 2023-2025 Ravshan I.
+# Custom
+nav_name: "Оглавление"
